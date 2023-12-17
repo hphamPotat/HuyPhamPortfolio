@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <!-- GIF Credits to https://github.com/rudrabarad/Gifs?tab=readme-ov-file -->
+
+    <head>
+        <title>Huy Pham - Portfolio</title>
+        <link rel="stylesheet" href="./style.css"/>
+        <script src="./script.js"></script>
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <nav>
+            <div id="home">
+                <div class="profile_name">
+                    Huy Pham
+                    <div class="contact_info">
+                        <img src="img/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+                        phamduchuy2000@gmail.com
+                    </div>
+
+                    <div style="clear:both;"></div>
+                    <div class="contact_info">
+                    <img src="img/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+                    +1 (819) 329 3516
+
+                    </div>
+                </div>
+
+                <div class="topdiv">
+                    <a class="topmenu" href="#about-me">About Me</a>
+
+
+                    <a class="topmenu" href="#skills">Skills</a>
+
+
+                    <a class="topmenu" href="#projects">Projects</a>
+
+
+                    <a class="topmenu" href="#recommendations">Recommendations</a>
+                </div>
+            </div>    
+        </nav>
+
+        <!-- About Me -->
+        <section id="about-me" class="container">
+        <div>
+            <img src="https://camo.githubusercontent.com/c1dcb74cc1c1835b1d716f5051499a2814c683c806b15f04b0eba492863703e9/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f3733303730332f73637265656e73686f74732f363538313234332f6176656e746f2e676966" class="profile_image"/>
+        </div>
+
+        <div>
+            <h1>
+                Hi, I'm Huy Pham!
+            </h1>
+            <p>
+                I have been a QA for 1.5 years and Backend Developer for  1 year and 3 months.
+                As a Backend Dev, with the help of Django, I created APIs, along with cronjobs in a company called JULO.
+                As a QA, I work on both manual and automation testing with Selenium and Postman at CaseIQ.  
+                My primary coding language is Python. I am currently looking to expand my horizon, adding Frontend capabilities to my skillset.
+            </p>
+        </div>
+        </section>
+                
+        <!-- Skills -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div style="clear:both;"></div>
+
+            <div class="all_skills">
+                <div class="skill">
+                    <img src="img/python.png"/>
+                    <h6>Python</h6>
+                    <p>2 years experience</p>
+                </div>  
+
+                <div class="skill">
+                    <img src="img/django.jpg"/>
+                    <h6>Django</h6>
+                    <p>1 year experience</p>
+                </div>
+
+                <div class="skill">
+                    <img src="img/selenium.png"/>
+                    <h6>Selenium</h6>
+                    <p>1.5 years experience</p>
+                </div>
+
+                <div class="skill">
+                    <img src="img/js.png"/>
+                    <h6>JavaScript</h6>
+                    <p>6 months experience</p>
+                </div>
+
+                <div class="skill">
+                    <img src="img/postgres.png"/>
+                    <h6>Postgresql</h6>
+                    <p>1 year experience</p>
+                </div>
+            </div>
+        </section>
+            
+        <!-- Projects -->
+        <section class="projects" id="projects">
+            <h2>
+                Projects
+            </h2>
+            <div style="clear:both;"></div>
+                <div id="projects-container" class="projects-container">
+                <div class="project-card">
+                    <h3>Selenium AutoSoak</h3>
+                    <ul>
+                        <li>Developed scripts to simulate user interactions with app using Python and Selenium</li>
+                    </ul>
+                </div>
+                
+                <hr>
+
+                <div class="project-card">
+                    <h3>Value Converter</h3>
+                    <ul>
+                        <li>Developed a simple website converting values for weights and length using HTML, CSS and JS </li>
+                    </ul>
+                </div>
+                
+                <hr>
+                
+                <div class="project-card">
+                    <h3>Golf Demo</h3>
+                    <ul>
+                        <li>Created a website about golf industry in Vietnam using HTML, CSS and JS</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div style="clear:both;"></div>
+
+        <!-- Recommendations -->
+        <section id="recommendations">
+            <h2>Recommendations</h2>
+
+            <div style="clear:both;"></div>
+
+            <div class="all_recommendations" id="all_recommendations">
+                <div class="recommendation">
+                    <span>&#8220;</span>
+                    Huy is a very dedicated employee. Always punctual and mindful of delivery timeframes to ensure 
+                    that his assigned activities were completed on time but also mindful that quality testing was to 
+                    take precedence over time commitments.
+                    <span>&#8221;</span>
+                </div>
+                
+                <div class="recommendation">
+                    <span>&#8220;</span>
+                    His approach to the testing was very different to that taken by previous students - resulting 
+                    in an automated test suite that could readily be picked up by any of our test teams and applied 
+                    to their applications with minimum configuration.
+                    <span>&#8221;</span>
+                </div>
+
+                <div class="recommendation">
+                    <span>&#8220;</span>
+                    I highly recommend Huy for the software developer role. His exceptional coding skills, 
+                    problem-solving prowess, and dedication make him an invaluable asset to any development team.
+                    <span>&#8221;</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommendation Form -->
+        <section id="contact">
+            <div class="flex_center">
+                <fieldset>
+                    <legend class="introduction">Leave a Recommendation</legend>          
+                    <input type="text" placeholder="Name (Optional)"> <br/>
+                    <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+                    
+                    <div class="flex_center">
+                        <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+
+        <div class="iconbutton">
+            <a href="#home">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </a>
+        </div>
+
+        <div class="popup" id="popup" class="flex_center">
+            <img src="img/checkmark--outline.svg"/>
+            <h3>Thank you for Submitting!</h3>
+            <button onclick="showPopup(false)">Ok</button>
+        </div>
+    </body>
+</html>
